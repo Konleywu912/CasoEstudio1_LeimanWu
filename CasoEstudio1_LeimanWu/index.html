@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="img/Captura de pantalla 2026-06-28 a la(s) 7.22.36 p. m..png" alt="Logo del sistema" width="200">
+    <h1>Registro de Estudiantes</h1>
+</header>
+
+<main>
+
+    <section>
+      
+        <h2>Agregar Estudiante</h2>
+
+        <form id="formEstudiante">
+
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="apellidos" placeholder="Apellidos">
+            <input type="number" id="nota" placeholder="Nota (0-100)" min="0" max="100">
+
+            <button type="submit">Agregar</button>
+
+            <p id="error"></p>
+
+        </form>
+
+    </section>
+
+    <section>
+
+        <h2>Lista de estudiantes</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaEstudiantes"></tbody>
+
+        </table>
+
+        <div id="resumen"></div>
+
+    </section>
+
+</main>
+
+<script src="logica.js"></script>
+
+</body>
+</html>
